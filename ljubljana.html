@@ -20,7 +20,11 @@
       margin-bottom: auto;
       text-align: center;
     }
+    #btn:hover {
+      cursor: pointer;
+    }
     #text {
+      text-align: center;
       margin-top: auto;
       margin-bottom: 60px;
       font-size: 60px;
@@ -64,6 +68,14 @@
       "Bor Urh",
       "Gregij",
       "Tadej Vaukman",
+      "Kukla",
+      "Vazz",
+      "Skrabzi",
+      "Joker Out",
+      "Ledeni Denile",
+      "Zlatko",
+      "Drone Emoji",
+      "Sahareya",
     ]
 
     const locations = [
@@ -78,6 +90,12 @@
       "Tiffany",
       "Metelkova",
       "Bivsi KCS",
+      "Cankarjev Dom",
+      "Podhod Ajdovscina",
+      "Zorica",
+      "Abandoned Bunker",
+      "Secret Tattoo Studio",
+      "Radio Student"
     ]
 
     const adjectives = [
@@ -92,6 +110,16 @@
       "Provocative",
       "Polemical",
       "Heart-wrenching",
+      "Brave",
+      "Daring",
+      "Average",
+      "Passable",
+      "Generic",
+      "Derivative",
+      "Pretentious",
+      "Pseudointellectual",
+      "Political",
+      "Psychedelic"
     ]
 
     const nouns = [
@@ -99,11 +127,24 @@
       "Videospot",
       "Popup brand",
       "LP",
+      "EP",
       "Exhibition",
       "Panel",
       "Protest",
-      "Meme page"
+      "Meme page",
+      "Fundraiser",
+      "House Set",
+      "Trap Set",
+      "Techno Set",
+      "Hybrid Set",
+      "Reading",
+      "Slam Poetry Night",
+      "Fashion show",
+      "Political Take",
+      "Illegal Rave",
+      "Guitar Solo",
     ]
+
     const getRandom = items => items[Math.floor(Math.random()*items.length)] 
     const newText = () => {
       document.querySelector('#text').textContent = `${getRandom(adjectives)} ${getRandom(nouns)} by ${getRandom(people)} at ${getRandom(locations)}`
